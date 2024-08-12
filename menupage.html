@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2e6ea; /* Light gray background for a subtle, clean look */
+            color: #343A40;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .back-button-top {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 1em;
+            color: #007BFF;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+        .back-button-top:hover {
+            color: #0056b3;
+        }
+        .back-arrow {
+            margin-right: 8px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .menu-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8f9fa; /* Lighter background inside the container */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-section:hover {
+            transform: translateY(-5px);
+        }
+        .menu-title {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #E9ECEF;
+            padding-bottom: 10px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #E9ECEF;
+            transition: background-color 0.3s ease;
+        }
+        .menu-item:hover {
+            background-color: #e9ecef;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item h4 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #343A40;
+        }
+        .menu-item p {
+            margin: 5px 0 0;
+            color: #6C757D;
+            font-size: 0.9em;
+        }
+        .menu-item .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #28a745; /* Green color for prices to make them stand out */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button-top" onclick="history.back()">
+            <span class="back-arrow">&#8592;</span> Back
+        </button>
+        <section class="menu-section">
+            <h2 class="menu-title">Menu</h2>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>chicken rice</h4>
+                    <p>Cooked with fresh chicken</p>
+                </div>
+                <div class="price">₨ 130.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Biryani</h4>
+                    <p>popular dishes from South Indian states,</p>
+                </div>
+                <div class="price">₨ 200.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Butter Chicken (Murgh Makhani)</h4>
+                    <p>A creamy and mildly spiced curry</p>
+                </div>
+                <div class="price">₨ 180.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Paneer Butter Masala</h4>
+                    <p>A vegetarian dish featuring paneer </p>
+                </div>
+                <div class="price">₨ 180.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Masala Dosa</h4>
+                    <p>Dish is made from fermented rice </p>
+                </div>
+                <div class="price">₨ 40.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Chicken Curry</h4>
+                    <p>Aromatic chicken curry served with steamed rice.</p>
+                </div>
+                <div class="price">₨ 120.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Lemon Rice</h4>
+                    <p>dish made with freshly squeezed lemon juice</p>
+                </div>
+                <div class="price">₨ 100.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Gulab Jamun</h4>
+                    <p>Gulab Jamun made with extra tast and love</p>
+                </div>
+                <div class="price">₨ 50.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Samosa</h4>
+                    <p>crispy and crunchy</p>
+                </div>
+                <div class="price">₨ 25.00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake,served with ice cream.</p>
+                </div>
+                <div class="price">₨ 100.00</div>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

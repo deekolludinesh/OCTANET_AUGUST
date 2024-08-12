@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #343a40;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .back-button-top {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 1.2em;
+            color: #007bff;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+        .back-button-top:hover {
+            color: #0056b3;
+        }
+        .back-arrow {
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        h1, h2 {
+            color: #0E6964;
+            text-align: center;
+        }
+        .contact-details {
+            margin: 20px 0;
+        }
+        .contact-details p {
+            margin: 10px 0;
+        }
+        .owner-info {
+            margin-top: 30px;
+        }
+        .owner-info img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .owner-info h3 {
+            text-align: center;
+            margin: 15px 0 5px 0;
+        }
+        .owner-info p {
+            text-align: center;
+        }
+        .contact-form {
+            margin-top: 30px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button-top" onclick="history.back()">
+            <span class="back-arrow">&#8592;</span> Back
+        </button>
+        <h1>Contact Us</h1>
+
+        <div class="contact-details">
+            <h2>Our Details</h2>
+            <p>Email: <a href="mailto:info@ourbusiness.com">info@gmail.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">1234567890</a></p>
+            <p>Address: balaji Street, city, coutry</p>
+        </div>
+
+        <div class="owner-info">
+            <h2>Owner Details</h2>
+            <img src="pf.jpg" alt="Owner Photo">
+            <h3>johny sins</h3>
+            <p>Founder & CEO</p>
+            <p>Email: <a href="mailto:johndoe@ourbusiness.com">info@gmail.com</a></p>
+            <p>Phone: <a href="tel:1234567890">1234567890</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
